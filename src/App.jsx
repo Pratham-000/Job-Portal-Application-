@@ -11,7 +11,7 @@ import Contact from '../pages/Contact';
 function App() {
   return (
     <AuthProvider>
-      <Router basename="/Job-Portal-Application-">
+      <Router basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Banner />} />
