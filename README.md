@@ -1,13 +1,74 @@
-# React + Vite
+# Job Portal Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern job portal built with **React**, **Vite**, **Firebase Auth**, and **Firestore**. It allows users to browse and search job listings, and sign up/login with Google Authentication.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** React + Vite
+- **Authentication:** Firebase (Google Sign-In)
+- **Database:** Firebase Firestore
+- **Routing:** React Router
+- **Styling:** Tailwind CSS (if used) / CSS Modules
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Job-Portal-Application-
+- Google Sign-In/Sign-Out using Firebase Authentication
+- Firestore-based job listing management
+- Responsive and fast UI with Vite
+- Job search and filter functionality
+- Protected routes for logged-in users
+
+## Folder Structure
+
+src/
+│
+├── components/ # Reusable UI components
+├── pages/ # Page-level components like Home, Login
+├── services/ # Firebase configuration and auth handlers
+├── data/ # Optional static job data (JSON)
+├── App.jsx # Main app component with routes
+└── main.jsx # React DOM render logic
+
+
+## Firebase Environment Setup
+
+Create a `.env` file in the root directory and add:
+```
+VITE_API_KEY=your_api_key
+VITE_AUTH_DOMAIN=your_auth_domain
+VITE_PROJECT_ID=your_project_id
+VITE_STORAGE_BUCKET=your_storage_bucket
+VITE_MESSAGING_SENDER_ID=your_messaging_sender_id
+VITE_APP_ID=your_app_id
+VITE_MEASUREMENT_ID=your_measurement_id
+```
+Copy
+Edit
+
+> Don't forget to add `.env` to your `.gitignore`.
+
+## Run Locally
+
+```bash
+git clone https://github.com/your-username/job-portal-app.git
+cd job-portal-app
+npm install
+npm run dev
+```
+# Deployment
+You can deploy this project to:
+
+Firebase Hosting
+
+Vercel
+
+Netlify
+
+📄 License
+MIT License © 2025 [Your Name]
+
+vbnet
+Copy
+Edit
+
+Let me know if you want a version with TypeScript, Tailwind setup, or Firebase deployment instructions.
