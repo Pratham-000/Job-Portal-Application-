@@ -13,7 +13,7 @@ import Contact from '../pages/Contact';
 function App() {
   return (
     <AuthProvider>
-      <Router>
+      <Router basename="/Job-Portal-Application">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path='' element={<Banner />} />
